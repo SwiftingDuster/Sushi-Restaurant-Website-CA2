@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- 
+            "Sushi!" Restaurant Website
+            Filename: aboutus.html
+            
+            Adm No: P-1625947   (Wang Ting Wei)
+            Date:   29 January 2017
+    	-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/SushiLogo.png">
+		<title>Sushi! Restaurant</title>
+	</head>
+
+	<body>
+		<header> 
+   			<a href="index.html" title="Home Page"> <img id="logoImage" src="images/SushiLogo.png" alt="Sushi! Restaurant Logo" title="Sushi! Restaurant Logo"/> </a>
+    		<div id="LogoDesc">
+        		<p id="restaurantName">Sushi! Restautant</p>
+        		<p id="restaurantNameSub">The best sushi you'll ever find</p>
+    		</div>
+		</header>
+
+    	<ul id="nav">
+        	<li><a href="index.html" title="Home">Home</a></li>
+        	<li><a href="events.html" title="Events">Events</a></li>
+        	<li><a href="directions.html" title="Directions">Directions</a></li>
+        	<li><a href="onlinereservation.html" title="Reserve Now!">Reserve Now!</a></li>
+    	</ul>
+		
+		<div class="mainPageContent">
+			<div class="greyRibbonContainer">
+				<h2 class="headers verticalAlign greyFont">Reservation Form</h2>
+			</div>
+			<article class="formWrapper">
+				<h2>Please fill up this reservation form</h2>
+				<form id="reserveForm" action="javascript:void(0)" onsubmit="return validateForm()">
+					<h3>Personal Information:</h3>
+					<label for="title"> Title: 
+						<select id="title" name="title">
+							<option>Mr.</option>
+							<option>Mrs.</option>
+							<option>Ms.</option>
+							<option>Dr.</option>
+						</select>
+					</label>
+					<input id="fullName" type="text" name="fullName" placeholder="Full Name (Required)"/>
+					<input id="tel" type="tel" name="tel" placeholder="Phone (Required)"/>
+					<textarea name="message" placeholder="Additional Message" onkeyup="adjust_textarea(this)"></textarea>
+					
+					<input type="text" id="myDatepicker" placeholder="Click to pick date" />
+					<h3>Choose your member type:</h3>
+					<label class="block" for="noMember">
+						<input type="radio" name="occasion" id="noMember" value="Vacation" checked> None
+					</label>
+					<label class="block" for="standardMember">
+						<input type="radio" name="occasion" id="standardMember" value="Celebration"> Sushi! Standard
+					</label>
+					<label class="block" for="goldMember">
+						<input type="radio" name="occasion" id="goldMember" value="Special Event"> Sushi! Gold
+					</label>
+					<label class="block" for="platinumMember">
+						<input type="radio" name="occasion" id="platinumMember" value="Special Event"> Sushi! Gold
+					</label>
+					
+					<h3>Number of Pax:</h3>
+					<div id="radioSet">
+						<label class="block" for="radioPax1">
+							<input type="radio" id="radioPax1" name="radio" checked> 1
+						</label>
+						<label class="block" for="radioPax2">
+							<input type="radio" id="radioPax2" name="radio"> 2-5
+						</label>
+						<label class="block" for="radioPax3">
+							<input type="radio" id="radioPax3" name="radio"> 6-15
+						</label>
+						<label class="block" for="radioPax4">
+							<input type="radio" id="radioPax4" name="radio"> More than 16
+						</label>
+					</div>
+					<input id="submitReservationForm" type="submit" value="Submit"/>
+  				</form>
+			</article>
+			
+			<div class="greyRibbonContainer">
+				<h2 class="headers verticalAlign greyFont">Get In Touch With Us!</h2>
+			</div>
+			<section class="formWrapper">
+  				<h2>We'd love to hear from you</h2>
+				<form id="contactForm" action="javascript:void(0)">
+					<input type="text" name="fullName" placeholder="Full Name"/>
+					<input type="email" name="email" placeholder="Email (Required)"/>
+					<textarea name="message" placeholder="Message (Required)" onkeyup="adjust_textarea(this)"></textarea>
+					<input id="submitContactForm" type="submit" value="Submit"/>
+  				</form>
+			</section>
+       		<div class="contactIcons">
+				<img class="alignBlockMiddle" id="contactIcons" src="images/contacticons.png"/>
+			</div>
+        </div>
+		
+		<!-- Footer -->
+        <footer class="footer-distributed">
+			<div class="footer-right">
+				<a href="http://www.facebook.com" target="_blank"><img class="social" src="images/social/facebook.png"/></a>
+				<a href="http://www.twitter.com" target="_blank"><img class="social" src="images/social/twitter.png"/></a>
+				<a href="http://www.plus.google.com" target="_blank"><img class="social" src="images/social/googleplus.png"/></a>
+				<a href="http://www.instagram.com" target="_blank"><img class="social" src="images/social/instagram.png"/></a>
+			</div>
+
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					-
+					<a href="events.html">Events</a>
+					-
+					<a href="directions.html">Directions</a>
+					-
+					<a href="onlinereservation.html">Reserve Now!</a>
+				</p>
+
+				<p>Sushi! Restaurant &copy; 2017</p>
+				<p>For Questions &amp; Enquiries: <a id="emailLink" href="mailto:tingwei1734@gmail.com">Drop Us An E-Mail</a></p>
+			</div>
+		</footer>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- 
+            "Sushi!" Restaurant Website
+            Filename: aboutus.html
+            
+            Adm No: P-1625947   (Wang Ting Wei)
+            Date:   29 January 2017
+    	-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/SushiLogo.png">
+		<title>Sushi! Restaurant</title>
+	</head>
+
+	<body>
+		<header>
+   			<a href="index.html" title="Home Page"> <img id="logoImage" src="images/SushiLogo.png" alt="Sushi! Restaurant Logo" title="Sushi! Restaurant Logo"/> </a>
+    		<div id="LogoDesc">
+        		<p id="restaurantName">Sushi! Restautant</p>
+        		<p id="restaurantNameSub">The best sushi you'll ever find</p>
+    		</div>
+		</header>
+		
+    	<ul id="nav">
+        	<li><a href="index.html" title="Home">Home</a></li>
+        	<li><a href="events.html" title="Events">Events</a></li>
+        	<li><a href="directions.html" title="Directions">Directions</a></li>
+        	<li><a href="onlinereservation.html" title="Reserve Now!">Reserve Now!</a></li>
+    	</ul>
+		
+		<div class="mainPageContent">
+			<div class="greyRibbonContainer">
+				<h2 class="headers verticalAlign greyFont">Directions Guide</h2>
+			</div>
+			<article class="directionWrapper">
+				<br/>
+				<h3 class="smallHeaders">
+					Visiting us? Follow this quick and easy guide and you will be here enjoying the best sushi in no time!
+				</h3>
+				<p class="directionText">
+					 Whether you are visiting by car/train or bus, we've got you covered! Click the buttons for detailed direction guide.
+				</p>
+				<br/>
+				<h4 class="smallHeaders centerText">
+					Mode of transport
+				</h4>
+				<div class="directionButtonContainer">
+   					<button class="directionButton" type="button" onclick="slideDirectionGuide(1);">Car</button>
+					<button class="directionButton" type="button" onclick="slideDirectionGuide(2);">Train</button>
+					<button class="directionButton" type="button" onclick="slideDirectionGuide(3);">Bus</button>
+				</div>
+				<div id="carDirection" class="noDisplay">
+					<div class="centerText">
+						<p class="headers redFont eventTextEnhanced">Travelling by car:</p>
+						<p>(This is probably the simplest way of getting here!)</p>
+					</div>
+					<h4 class="smallHeaders">Senario 1: If you're already in Sushi Town</h4>
+					<p class="directionText">1. Drive here by taking the main road leading to <i>Grove Street 86</i>.</p>
+					<p class="directionText">2. Next, drive north towards Benda Road and turn right into <i>Acadia Bay</i>.</p>
+					<p class="directionText">3. Finally, drive straight for about 2 minutes and you should see the <span class="redFont eventTextEnhanced">Sushi Restaurant's</span> sign! (It's hard to miss!).</p>
+					<h4 class="smallHeaders">Senario 2: If you're from another City</h4>
+					<p class="directionText">1. Get onto the <i>Adam Highway</i> and exit at <span class="redFont eventTextEnhanced">Exit 0</span></p>
+					<p class="directionText">2. Drive straight for 10 minutes and you should see the Sushi Town's main attraction. It's a giant Sushi in the middle of the town! If you see it, turn right!</p>
+					<p class="directionText">3. Drive here by taking the main road leading to <i>Grove Street 86</i>.</p>
+					<p class="directionText">4. Next, drive north towards Benda Road and turn right into <i>Acadia Bay</i>.</p>
+					<p class="directionText">5. Finally, drive straight for about 2 minutes and you should see the <span class="redFont eventTextEnhanced">Sushi Restaurant's</span> sign! (It's hard to miss!).</p>
+				</div>
+				<div id="trainDirection" class="noDisplay">
+					<div class="centerText">
+						<p class="headers redFont eventTextEnhanced">Travelling by Train:</p>
+						<p>(For those who wants to save the world from pollution)</p>
+					</div>
+					
+					<h4 class="smallHeaders">Senario 1: If you're already in Sushi Town</h4>
+					<p class="directionText">1. Get to the <span class="redFont eventTextEnhanced">North-South(NS)</span> Line from your location and alight at NS10 <span class="redFont eventTextEnhanced">Woodlands Station</span>.</p>
+					<p class="directionText">2. Take Bus 300 from the Bus interchange right under the train station. Alight 3 stops later at <i>Acadia Bay</i>.</p>
+					<p class="directionText">3. Walk north for 10 minutes and you should see the <span class="redFont eventTextEnhanced">Sushi Restaurant's</span> sign! (It's hard to miss!).</p>
+				</div>
+				<div id="busDirection" class="noDisplay">
+					<div class="centerText">
+						<p class="headers redFont eventTextEnhanced">Travelling by Bus:</p>
+						<p>(Old but gold)</p>
+					</div>
+					
+					<h4 class="smallHeaders">Senario 1: If you're already in Sushi Town</h4>
+					<p class="directionText">1. Get to the <span class="redFont eventTextEnhanced">Woodlands Bus Interchange</span> from your location.</p>
+					<p class="directionText">2. Take Bus 300 from the Bus interchange right under the train station. Alight 3 stops later at <i>Acadia Bay</i>.</p>
+					<p class="directionText">3. Walk north for 10 minutes and you should see the <span class="redFont eventTextEnhanced">Sushi Restaurant's</span> sign! (It's hard to miss!).</p>
+				</div>
+			</article>
+			<br/>
+			<div class="greyRibbonContainer">
+				<h2 class="headers verticalAlign greyFont">Google Maps</h2>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d101306.73939862408!2d103.81708823640376!3d1.3545681291813723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssg!4v1486825813199" frameborder="0" style="border:0" allowfullscreen>
+			</iframe>
+		</div>
+		
+		<!-- Footer -->
+        <footer class="footer-distributed">
+			<div class="footer-right">
+				<a href="http://www.facebook.com" target="_blank"><img class="social" src="images/social/facebook.png"/></a>
+				<a href="http://www.twitter.com" target="_blank"><img class="social" src="images/social/twitter.png"/></a>
+				<a href="http://www.plus.google.com" target="_blank"><img class="social" src="images/social/googleplus.png"/></a>
+				<a href="http://www.instagram.com" target="_blank"><img class="social" src="images/social/instagram.png"/></a>
+			</div>
+
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					-
+					<a href="events.html">Events</a>
+					-
+					<a href="directions.html">Directions</a>
+					-
+					<a href="onlinereservation.html">Reserve Now!</a>
+				</p>
+
+				<p>Sushi! Restaurant &copy; 2017</p>
+				<p>For Questions &amp; Enquiries: <a id="emailLink" href="mailto:tingwei1734@gmail.com">Drop Us An E-Mail</a></p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

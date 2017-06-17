@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- 
+            "Sushi!" Restaurant Website
+            Filename: index.html
+            
+            Adm No: P-1625947   (Wang Ting Wei)
+            Date:   29 January 2017
+    	-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/SushiLogo.png">
+		<title>Sushi! Restaurant</title>
+	</head>
+
+	<body>
+		<header> 
+   			<a href="index.html" title="Home Page"> <img id="logoImage" src="images/SushiLogo.png" alt="Sushi! Restaurant Logo" title="Sushi! Restaurant Logo"/> </a>
+    		<div id="LogoDesc">
+        		<p id="restaurantName">Sushi! Restautant</p>
+        		<p id="restaurantNameSub">The best sushi you'll ever find</p>
+    		</div>
+		</header>
+
+    	<ul id="nav">
+        	<li><a href="index.html" title="Home">Home</a></li>
+        	<li><a href="events.html" title="Events">Events</a></li>
+        	<li><a href="directions.html" title="Directions">Directions</a></li>
+        	<li><a href="onlinereservation.html" title="Reserve Now!">Reserve Now!</a></li>
+    	</ul>
+
+		<div class="slideshow-container">
+    		<div class="mySlides fade">
+        		<img src="images/crabsushi.jpg" alt="Crab Sushi">
+    		</div>
+    		<div class="mySlides fade">
+        		<img src="images/salmonsushi.jpg" alt="Salmon Sushi">
+    		</div>
+    		<div class="mySlides fade">
+        		<img src="images/shrimp_sushi.jpg" alt="Shrimp Sushi">
+    		</div>
+    		<div class="mySlides fade">
+        		<img src="images/friedebi.jpg" alt="Fried Ebi">
+    		</div>
+    		<div class="mySlides fade">
+        		<img src="images/tunasushi.jpg" alt="Tuna Sushi">
+    		</div>
+    		<div class="mySlides fade">
+        		<img src="images/shrimpsushi.jpg" alt="Shrimp Sushi">
+    		</div>
+    	</div>
+		<div class="slideshow-dots">
+			<span class="dot" onclick="currentSlide(0)"></span>
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		
+		<div class="redRibbonContainer">
+			<button id="reserveButton" type="button" onclick="window.location='onlinereservation.html'">Reserve Now!</button>
+		</div>
+		
+		<hr/>
+		<div class="mainPageContent">
+			<article class="textContainer">
+				<h1 class="headers redFont">
+					Sushi! Restaurant
+				</h1>
+				<p class="indexText">
+					Sushi! is perfect for all kinds of occasions, be it birthday parties, events, celebrations, day out with friends or simply an idyllic dinner with your family and loved ones. An all-day dining restaurant featuring panoramic views of Mt Fuji, and our fresh hand made sushi from our 5 star chefs everyday. Take a look at our menu, especially our signature dishes, which are our local's favourite. 
+				</p>
+			</article>
+			<div class="roundImageWrapper">
+				<div id="c1">
+					<img src="images/chef.jpg">
+					<p class="cCaptions">Top Chefs</p>
+				</div>
+				<div id="c2">
+					<img src="images/familysushicombo.jpg">
+					<p class="cCaptions">Traditional Sushi</p>
+				</div>
+				<div id="c3">
+					<img src="images/storefront.jpeg">
+					<p class="cCaptions">Breathtaking Views</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+        <footer class="footer-distributed">
+			<div class="footer-right">
+				<a href="http://www.facebook.com" target="_blank"><img class="social" src="images/social/facebook.png"/></a>
+				<a href="http://www.twitter.com" target="_blank"><img class="social" src="images/social/twitter.png"/></a>
+				<a href="http://www.plus.google.com" target="_blank"><img class="social" src="images/social/googleplus.png"/></a>
+				<a href="http://www.instagram.com" target="_blank"><img class="social" src="images/social/instagram.png"/></a>
+			</div>
+
+			<div class="footer-left">
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					-
+					<a href="events.html">Events</a>
+					-
+					<a href="directions.html">Directions</a>
+					-
+					<a href="onlinereservation.html">Reserve Now!</a>
+				</p>
+
+				<p>Sushi! Restaurant &copy; 2017</p>
+				<p>For Questions &amp; Enquiries: <a id="emailLink" href="mailto:tingwei1734@gmail.com">Drop Us An E-Mail</a></p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
